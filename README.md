@@ -4,7 +4,7 @@
  - vue3 js
  - vue-router
  - antdv
- - python
+ - python 3.12\(建议\)
  - flask
  - sqlite
 # 演示(自用)站
