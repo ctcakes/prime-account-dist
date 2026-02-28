@@ -1,0 +1,187 @@
+/* 全局样式覆盖 */
+:root {
+  --primary-color: #00bcd4;
+  --success-color: #4caf50;
+  --warning-color: #ff9800;
+  --error-color: #f44336;
+  --info-color: #00bcd4;
+}
+
+/* 修改 Ant Design 主题颜色为青色系 */
+:deep(.ant-btn-primary) {
+  background: #00bcd4 !important;
+  border-color: #00bcd4 !important;
+  color: #ffffff !important;
+}
+
+:deep(.ant-btn-primary:hover) {
+  background: #00acc1 !important;
+  border-color: #00acc1 !important;
+}
+
+:deep(.ant-btn-primary:focus) {
+  background: #00acc1 !important;
+  border-color: #00acc1 !important;
+}
+
+/* 输入框样式 */
+:deep(.ant-input),
+:deep(.ant-select-selector),
+:deep(.ant-textarea) {
+  background: #ffffff !important;
+  border-color: #d9d9d9 !important;
+  color: #333333 !important;
+}
+
+:deep(.ant-input:focus),
+:deep(.ant-select-focused .ant-select-selector),
+:deep(.ant-textarea:focus) {
+  border-color: #00bcd4 !important;
+  box-shadow: 0 0 0 2px rgba(0, 188, 212, 0.1) !important;
+}
+
+:deep(.ant-input::placeholder) {
+  color: #bfbfbf !important;
+}
+
+/* Select 下拉框 */
+:deep(.ant-select-dropdown) {
+  background: #ffffff !important;
+  border: 1px solid #d9d9d9 !important;
+}
+
+:deep(.ant-select-item-option) {
+  color: #333333 !important;
+}
+
+:deep(.ant-select-item-option-selected) {
+  background: rgba(0, 188, 212, 0.1) !important;
+  color: #00bcd4 !important;
+}
+
+:deep(.ant-select-item-option:hover) {
+  background: rgba(0, 188, 212, 0.05) !important;
+}
+
+/* Card 组件 */
+:deep(.ant-card) {
+  background: #ffffff !important;
+  border: 1px solid #e8e8e8 !important;
+}
+
+:deep(.ant-card-head) {
+  border-bottom-color: #e8e8e8 !important;
+}
+
+/* Divider 分割线 */
+:deep(.ant-divider) {
+  border-color: #e8e8e8 !important;
+}
+
+:deep(.ant-divider-horizontal.ant-divider-with-text) {
+  background: #ffffff !important;
+}
+
+:deep(.ant-divider-horizontal.ant-divider-with-text::before),
+:deep(.ant-divider-horizontal.ant-divider-with-text::after) {
+  border-color: #e8e8e8 !important;
+}
+
+/* Tag 标签 */
+:deep(.ant-tag) {
+  background: rgba(0, 188, 212, 0.1) !important;
+  border: 1px solid #00bcd4 !important;
+  color: #00bcd4 !important;
+}
+
+:deep(.ant-tag-green) {
+  background: rgba(76, 175, 80, 0.1) !important;
+  border: 1px solid #4caf50 !important;
+  color: #4caf50 !important;
+}
+
+:deep(.ant-tag-blue) {
+  background: rgba(0, 188, 212, 0.1) !important;
+  border: 1px solid #00bcd4 !important;
+  color: #00bcd4 !important;
+}
+
+/* Spin 加载 */
+:deep(.ant-spin-dot-item) {
+  background-color: #00bcd4 !important;
+}
+
+/* Checkbox */
+:deep(.ant-checkbox-inner) {
+  background: #ffffff !important;
+  border-color: #d9d9d9 !important;
+}
+
+:deep(.ant-checkbox-checked .ant-checkbox-inner) {
+  background: #00bcd4 !important;
+  border-color: #00bcd4 !important;
+}
+
+/* Form Item */
+:deep(.ant-form-item-label > label) {
+  color: #333333 !important;
+}
+
+:deep(.ant-form-item-explain-error) {
+  color: #f44336 !important;
+}
+
+/* 全局滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bfbfbf;
+}
+
+/* 修改链接颜色 */
+:deep(a) {
+  color: #00bcd4;
+}
+
+:deep(a:hover) {
+  color: #00acc1;
+}
+
+/* 修改 Message 样式 */
+:deep(.ant-message) {
+  top: 24px !important;
+}
+
+:deep(.ant-message-notice-content) {
+  background: #ffffff !important;
+  border: 1px solid #e8e8e8 !important;
+  color: #333333 !important;
+}
+
+:deep(.ant-message-success .anticon) {
+  color: #4caf50 !important;
+}
+
+:deep(.ant-message-error .anticon) {
+  color: #f44336 !important;
+}
+
+:deep(.ant-message-warning .anticon) {
+  color: #ff9800 !important;
+}
+
+:deep(.ant-message-info .anticon) {
+  color: #00bcd4 !important;
+}
